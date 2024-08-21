@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="13dp"
+    android:layout_marginBottom="20dp"
+    android:background="@drawable/bg_tasks_item">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgChecked"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="@color/primary"
+        android:src="@drawable/bg_tasks_item_checkable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTaskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email to John Doe"
+        android:textSize="17sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imgChecked"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTaskTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08:00 AM to 12:00 PM"
+        android:textSize="12sp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toBottomOf="@id/tvTaskName"
+        app:layout_constraintStart_toStartOf="@id/tvTaskName"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/img_edit"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toTopOf="@id/tvTaskName"
+        app:layout_constraintEnd_toStartOf="@id/imgDelete"
+        app:layout_constraintBottom_toBottomOf="@id/tvTaskTime"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/img_delete"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:layout_constraintTop_toTopOf="@id/tvTaskName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tvTaskTime"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ToDo App</string>
+    <string name="create_new_task">Create New Task</string>
+    <string name="enter_task_name">Enter task name</string>
+    <string name="description">Description</string>
+    <string name="priority">Priority</string>
+    <string name="end_time">End time</string>
+    <string name="start_time">Start time</string>
+    <string name="e_g_20_ocotober_tuesday">e.g. 20 Ocotober, Tuesday</string>
+    <string name="date_amp_time"><![CDATA[Date & Time]]></string>
+    <string name="category">Category</string>
+    <string name="task_name">Task Name</string>
+    <string name="create_a_new_task">Create a new task</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="e_g_05_00">e.g. 05: 00</string>
+    <string name="e_g_08_00">e.g. 08: 00</string>
+</resources>
